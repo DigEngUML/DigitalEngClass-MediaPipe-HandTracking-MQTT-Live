@@ -161,7 +161,7 @@
 <h1>Gesture Arc + MQTT</h1>
 <p class="sub">
   Hand-gesture controlled arc, publishing 5 smoothed gesture angles over MQTT
-  (via WebSockets) to <code>test.mosquitto.org</code>. Runs fully client-side using MediaPipe Hands.
+  (via WebSockets) to <code>broker.emqx.io</code>. Runs fully client-side using MediaPipe Hands.
 </p>
 
 <div class="gesture-legend" id="gesture_legend">
@@ -241,7 +241,7 @@ const SCREEN_W = 1000, SCREEN_H = 500;
 const CENTER = [SCREEN_W / 2, SCREEN_H - 50];
 const RADIUS = 250;
 
-const MQTT_BROKER_WS = "wss://test.mosquitto.org:8081/mqtt";
+const MQTT_BROKER_WS = "wss://broker.emqx.io:8084/mqtt";
 const DEFAULT_MQTT_TOPIC = "transmitcontrolsignals/roboticarm";
 let mqttTopic = DEFAULT_MQTT_TOPIC; // now user-configurable at runtime
 const PUBLISH_INTERVAL_MS = 1000;
